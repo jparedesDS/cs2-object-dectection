@@ -3,10 +3,11 @@
 #### Supported Labels
 ['CT', 'CT_head', 'T', 'T_head']
 
-#### models YOLOv10
+#### ALL my models YOLOv10 & YOLOv9
+- Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
 - Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
 - Yolov10m: https://huggingface.co/jparedesDS/cs2-yolov10m
-- Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
+- Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
 
 #### How to use
 ```

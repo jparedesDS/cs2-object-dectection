@@ -1,10 +1,12 @@
-# Counter Strike 2 players detector
+# Counter Strike 2 Players Detector
 
 #### Supported Labels
 ['CT', 'CT_head', 'T', 'T_head']
 
-#### models
-YOLOv10s
+#### models YOLOv10
+- Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
+- Yolov10m: https://huggingface.co/jparedesDS/cs2-yolov10m
+- Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
 
 #### How to use
 ```

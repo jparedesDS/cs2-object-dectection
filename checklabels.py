@@ -1,14 +1,18 @@
 import cv2
 import os
 from pathlib import Path
+import shutil  # Para mover archivos
 
 # Directorio de imágenes y etiquetas
 directorio_imagenes = 'data/train/images/'  # Carpeta de imágenes
 directorio_labels = 'data/train/labels/'  # Carpeta de etiquetas
+directorio_sin_etiqueta = 'data/train/images_sin_etiqueta/'  # Carpeta para imágenes sin etiquetas
+
+# Crear la carpeta para imágenes sin etiquetas si no existe
+os.makedirs(directorio_sin_etiqueta, exist_ok=True)
 
 # Diccionario para las clases (ajústalo según tus clases)
 clases = {0: '1', 1: '2', 2: '3', 3: '4'}  # Ajusta esto según tus clases
-
 
 def visualizar_labels_en_imagen(imagen_path, label_path):
     img = cv2.imread(imagen_path)
@@ -47,7 +51,6 @@ def visualizar_labels_en_imagen(imagen_path, label_path):
     cv2.waitKey(0)  # Presiona cualquier tecla para cerrar la ventana
     cv2.destroyAllWindows()
 
-
 # Procesar todas las imágenes y etiquetas
 for archivo_imagen in os.listdir(directorio_imagenes):
     img_path = os.path.join(directorio_imagenes, archivo_imagen)
@@ -57,3 +60,7 @@ for archivo_imagen in os.listdir(directorio_imagenes):
         visualizar_labels_en_imagen(img_path, label_path)
     else:
         print(f"No se encontró etiqueta para {archivo_imagen}")
+        # Mover la imagen a la carpeta de imágenes sin etiquetas
+        shutil.move(img_path, os.path.join(directorio_sin_etiqueta, archivo_imagen))
+
+print("Las imágenes sin etiquetas han sido movidas a la carpeta:", directorio_sin_etiqueta)

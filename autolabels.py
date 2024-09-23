@@ -4,8 +4,8 @@ import os
 from pathlib import Path
 from ultralytics import YOLO  # YOLOv8
 
-# Cargar el modelo YOLOv10 preentrenado
-model = YOLO('cs2_yolov10s.pt')  # Reemplaza con la ruta a tu modelo YOLOv8
+# Cargar el tu propio modelo YOLO
+model = YOLO('cs2_yolov10s.pt')  # Reemplaza con la ruta a tu modelo YOLOvX
 
 # Ruta a las imágenes no etiquetadas
 directorio_imagenes = 'data/train/images/'
@@ -35,7 +35,7 @@ def guardar_labels_yolo(imagen, predicciones, directorio_salida):
                 ancho /= img_width
                 alto /= img_height
 
-                # Guardar en formato YOLO
+                # Guardar en formato YOLO .txt
                 f.write(f"{int(clase)} {x_centro} {y_centro} {ancho} {alto}\n")
 
 
@@ -44,7 +44,7 @@ for archivo_imagen in os.listdir(directorio_imagenes):
     img_path = os.path.join(directorio_imagenes, archivo_imagen)
     img = cv2.imread(img_path)
 
-    # Realizar inferencia con el modelo YOLOv8
+    # Realizar inferencia con el modelo YOLOvX
     resultados = model(img)
 
     # Extraer los valores de las cajas, confianza y clases
@@ -60,4 +60,4 @@ for archivo_imagen in os.listdir(directorio_imagenes):
     # Guardar las pseudo-labels en formato YOLO
     guardar_labels_yolo(img_path, predicciones, directorio_salida)
 
-print(f"Pseudo-labels generados y guardados en {directorio_salida}")
+print(f"Labels generados y guardados en {directorio_salida}")

@@ -3,11 +3,14 @@
 #### Supported Labels
 ['CT', 'CT_head', 'T', 'T_head']
 
-#### ALL my models YOLOv10 & YOLOv9
+#### ALL my models YOLOv10 & YOLOv9 for Counter Strike 2 Object Detection
 - Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
 - Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
 - Yolov10m: https://huggingface.co/jparedesDS/cs2-yolov10m
 - Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
+
+#### ALL my models YOLOv10 for Valorant Object Detection
+- YOLOv10b: https://huggingface.co/jparedesDS/valorant-yolov10b
 
 #### How to use
 ```
@@ -41,5 +44,5 @@ YOLOv10s summary (fused): 293 layers, 8,038,056 parameters, 0 gradients, 24.5 GF
                 t_head         62         74      0.938      0.973      0.984      0.728
 ```
 
-#### Others models Counter Strike 2 YOLOv10m Object Detection
-https://huggingface.co/ChitoParedes/cs2-yolov10m
+#### ALL models
+https://huggingface.co/jparedesDS

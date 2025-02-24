@@ -3,11 +3,12 @@
 #### Supported Labels
 ['CT', 'CT_head', 'T', 'T_head']
 
-#### MODELS YOLOv9, YOLOv10 for Counter Strike 2 Object Detection
+#### MODELS YOLOv9, YOLOv10, YOLO12 for Counter Strike 2 Object Detection
 - Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
 - Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
 - Yolov10m: https://huggingface.co/jparedesDS/cs2-yolov10m
 - Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
+- Yolo12s: https://huggingface.co/jparedesDS/cs2_yolo12s
 
 #### ALL my models YOLO11, YOLOv10
 - Yolov10b: https://huggingface.co/jparedesDS/valorant-yolov10b

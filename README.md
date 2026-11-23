@@ -1,69 +1,19 @@
-# Counter Strike 2 Players Detector
+﻿<div align="center">
 
-#### Supported Labels
-['CT', 'CT_head', 'T', 'T_head']
+# This project has moved
 
-#### MODELS YOLOv9, YOLOv10, YOLO12 for Counter Strike 2 Object Detection
-- Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
-- Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
-- Yolov10m: https://huggingface.co/jparedesDS/cs2-yolov10m
-- Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
-- Yolo12s: https://huggingface.co/jparedesDS/cs2_yolo12s
+**This repository is archived and read-only.**
 
-#### ALL my models YOLO11, YOLOv10
-- Yolov10b: https://huggingface.co/jparedesDS/valorant-yolov10b
-- Yolo11m: https://huggingface.co/jparedesDS/valorant-yolo11m
-- Yolo11l: https://huggingface.co/jparedesDS/deadlock-yolo11l
+The project now lives in the consolidated **Object Detection Models** model zoo:
 
-  
-#### How to use
-```
-from ultralytics import YOLO
+### → [jparedesDS/object-detection-models](https://github.com/jparedesDS/object-detection-models)
 
-# Load a pretrained YOLO model
-model = YOLO(r'weights\yolov10s_cs2.pt')
+**Direct link:** [CS2 Player Detection](https://github.com/jparedesDS/object-detection-models/tree/main/projects/cs2-players-detection)
 
-# Run inference on 'image.png' with arguments
-model.predict(
-    'image.png',
-    save=True,
-    device=0
-    )
-```
+**Model weights:** [Hugging Face](https://huggingface.co/jparedesDS)
 
-#### Labels
-![labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/KRuK-Y9uEP2Hwat5ojD1E.jpeg)
-#### Results
-![results.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/-DOb5ZmGoI_vXs7zgtFMP.png)
-#### Predict
-![train_batch0.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/Ie7m1EQosL87TbN_UoS-0.jpeg)
-![train_batch1.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/Lr3solcPWqHrdMvQ0hBX9.jpeg)
-```
-YOLOv10s summary (fused): 293 layers, 8,038,056 parameters, 0 gradients, 24.5 GFLOPs
-                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 5/5 [00:03<00:00,  1.41it/s]
-                   all        160        372      0.958       0.94      0.979      0.772
-               ct_body         88        110      0.964      0.964      0.988      0.861
-               ct_head         82        104      0.946      0.847      0.953      0.634
-                t_body         70         84      0.986      0.976       0.99      0.866
-                t_head         62         74      0.938      0.973      0.984      0.728
-```
+</div>
 
-#### ALL models
-https://huggingface.co/jparedesDS
+---
 
-## ❤️ Why buy me a coffee?
-
-If any of my repositories have been useful to you, saved you time, or inspired you in any way, you can support my work by buying me a coffee ☕
-Your support helps me to:
-
-Keep projects maintained and improved
-
-Create new open source repositories
-
-Spend more time documenting and explaining the code
-
-👉 Buy me a coffee here:
-
-<a href="https://buymeacoffee.com/joseparedes" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200"/>
-</a>
+**Español:** este repositorio está archivado. El proyecto y su documentación se mantienen ahora en [object-detection-models](https://github.com/jparedesDS/object-detection-models/tree/main/projects/cs2-players-detection).
